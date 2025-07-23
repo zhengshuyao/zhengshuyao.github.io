@@ -1,284 +1,165 @@
-
-
-<!DOCTYPE html>
-<html lang="zh-CN" data-default-color-scheme=auto>
-
-
-
-<head>
-  <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
-  <link rel="icon" href="/img/fluid.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-  
-  <meta name="theme-color" content="#2f4154">
-  <meta name="author" content="Zheng Shuyao">
-  <meta name="keywords" content="">
-  
-    <meta name="description" content="该文章已被加密，请输入密码查看.">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>力扣练习第二天 | Mercedes的第七页日记</title><meta name="author" content="Mercedes"><meta name="copyright" content="Mercedes"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="该文章已被加密，请输入密码查看.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="力扣练习第二天">
 <meta property="og:url" content="https://zhengshuyao.cn/posts/leetcode-practice-20250720/index.html">
-<meta property="og:site_name" content="舒瑶的技术博客">
+<meta property="og:site_name" content="Mercedes的第七页日记">
 <meta property="og:description" content="该文章已被加密，请输入密码查看.">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://zhengshuyao.cn/img/butterfly-icon.png">
 <meta property="article:published_time" content="2025-07-20T06:19:52.000Z">
 <meta property="article:modified_time" content="2025-07-22T12:52:29.320Z">
-<meta property="article:author" content="Zheng Shuyao">
+<meta property="article:author" content="Mercedes">
 <meta property="article:tag" content="LeetCode-Practice-20250720">
-<meta name="twitter:card" content="summary_large_image">
-  
-  
-  
-  <title>力扣练习第二天 - 舒瑶的技术博客</title>
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
-
-
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
-
-
-
-<!-- 主题依赖的图标库，不要自行修改 -->
-<!-- Do not modify the link that theme dependent icons -->
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
-
-
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
-
-
-<link  rel="stylesheet" href="/css/main.css" />
-
-
-  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
-  
-    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
-  
-
-
-
-  
-<link rel="stylesheet" href="/css/macpanel.css">
-
-
-
-  <script id="fluid-configs">
-    var Fluid = window.Fluid || {};
-    Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"zhengshuyao.cn","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
-
-    if (CONFIG.web_analytics.follow_dnt) {
-      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
-      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://zhengshuyao.cn/img/butterfly-icon.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "力扣练习第二天",
+  "url": "https://zhengshuyao.cn/posts/leetcode-practice-20250720/",
+  "image": "https://zhengshuyao.cn/img/butterfly-icon.png",
+  "datePublished": "2025-07-20T06:19:52.000Z",
+  "dateModified": "2025-07-22T12:52:29.320Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Mercedes",
+      "url": "https://zhengshuyao.cn"
     }
-  </script>
-  <script  src="/js/utils.js" ></script>
-  <script  src="/js/color-schema.js" ></script>
-  
-
-
-  
-<meta name="generator" content="Hexo 7.3.0"></head>
-
-
-<body>
-  
-
-  <header>
-    
-
-<div class="header-inner" style="height: 70vh;">
-  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
-  <div class="container">
-    <a class="navbar-brand" href="/">
-      <strong class="navbar-title">SHUYAO&#39;S BLOG</strong>
-    </a>
-
-    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="animated-icon"><span></span><span></span><span></span></div>
-    </button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto text-center">
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/" target="_self">
-                <i class="iconfont icon-home-fill"></i>
-                <span>首页</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/archives/" target="_self">
-                <i class="iconfont icon-archive-fill"></i>
-                <span>归档</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/categories/" target="_self">
-                <i class="iconfont icon-category-fill"></i>
-                <span>分类</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/tags/" target="_self">
-                <i class="iconfont icon-tags-fill"></i>
-                <span>标签</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/about/" target="_self">
-                <i class="iconfont icon-user-fill"></i>
-                <span>关于</span>
-              </a>
-            </li>
-          
-        
-        
-          <li class="nav-item" id="search-btn">
-            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
-              <i class="iconfont icon-search"></i>
-            </a>
-          </li>
-          
-        
-        
-          <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
-              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
-            </a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-</nav>
-
-  
-
-<div id="banner" class="banner" parallax=true
-     style="background: url('https://oss.huparry.cn/zsy/background.png') no-repeat center center; background-size: cover;">
-  <div class="full-bg-img">
-    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
-      <div class="banner-text text-center fade-in-up">
-        <div class="h2">
-          
-            <span id="subtitle" data-typed-text="力扣练习第二天"></span>
-          
-        </div>
-
-        
-          
-  <div class="mt-3">
-    
-    
-      <span class="post-meta">
-        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-07-20 14:19" pubdate>
-          2025年7月20日 下午
-        </time>
-      </span>
-    
-  </div>
-
-  <div class="mt-1">
-    
-      <span class="post-meta mr-2">
-        <i class="iconfont icon-chart"></i>
-        
-          646 字
-        
-      </span>
-    
-
-    
-      <span class="post-meta mr-2">
-        <i class="iconfont icon-clock-fill"></i>
-        
-        
-        
-          6 分钟
-        
-      </span>
-    
-
-    
-    
-  </div>
-
-
-        
-      </div>
-
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://zhengshuyao.cn/posts/leetcode-practice-20250720/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
       
-    </div>
-  </div>
-</div>
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
 
-</div>
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
 
-  </header>
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
 
-  <main>
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
     
       
-
-<div class="container-fluid nopadding-x">
-  <div class="row nomargin-x">
-    <div class="side-col d-none d-lg-block col-lg-2">
-      
-
-    </div>
-
-    <div class="col-lg-8 nopadding-x-md">
-      <div class="container nopadding-x-md" id="board-ctn">
-        <div id="board">
-          <article class="post-content mx-auto">
-            <h1 id="seo-header">力扣练习第二天</h1>
-            
-            
-              
-              <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，密码错误，请再试试。" data-whm="抱歉，这个文章不能被校验，不过您还是能查看解密后的内容。">
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '力扣练习第二天',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Mercedes的第七页日记</span></a><a class="nav-page-title" href="/"><span class="site-name">力扣练习第二天</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">力扣练习第二天</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-07-20T06:19:52.000Z" title="发表于 2025-07-20 14:19:52">2025-07-20</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-07-22T12:52:29.320Z" title="更新于 2025-07-22 20:52:29">2025-07-22</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，密码错误，请再试试。" data-whm="抱歉，这个文章不能被校验，不过您还是能查看解密后的内容。">
   <script id="hbeData" type="hbeData" data-hmacdigest="83ebc8467d6d5340dab7d325e17a8de42357776e43d9f4082597e71002f93a1b">569e8bc7cde99b00afaf2876327ad616c7daaec56b8ec5f62c6d3d3e2cc34f1be20b05a41f7d6915a8f1c7673b9195c7e9e814fef10326188fb36cf880bc166783b4a9e6fb893c24f4f1fe6bef2fe2a8ccd6e5167b1e523a47aed3da9fa1975152b23f3645788bc48218212afdd23cd373ad3e31f00e0257f3eff9f856675277de01d5209c2c4a9d8dda0c4a7f96da8fdd5fbe7963b61c35b0d730f9326667bca63d7e606083ab31fd6bd3c77025a872ae664c757e63e0b2e85c44dd672a147e19a404e768dae305213e6f9aa738b09663bd608f8f4e04871ae642bb97671951164d248a829d133365ec9968ffa21329ddeb0cdc6ba347847b1942b29b06f534fa02a1957ce30d792184187319b436c91436d4bd30e28a4f5b0c66df1b321928abb4b0dd2e7f6c1aa291cd8daedaf3ea0647725cb4a3effd3c8366380c590bd1d129041922008bcf8703db1a07a2ee0457003223af8140711c5d37e9a95eca8ea946c2bc08a63808023c04597e012f5ba4dbcd892485314bb758ee07a99ec64d9d94a4db9707d12a158656bb77ac0d1e39ef98434c79d1af037674f2d3d3d8fcee81c248828a3e60681626bb8818f0d3bea8deff4f9f94b7b9d30515d7397185d1c67fa128265bf8e3eee11ea768481b06ac7f44dae3d663afa254bec3c4e1045a497a251b16b092bb48ad1da1012ee63b07092707eebe31a71b832a94a160af79252ea87958bb3dbe2cfd80331fee11b31689fba6bf52f398015594fcb436d15a0d819261f36f4460ae5ea07a679ee3590286e64d00c130d32661893dfd5f02651e81957adf2350d69a0e24dc4eaf57fe912ff5447c13f2a4525b64f0163a20694d79b9fe17e101056868bc85b64c34cc2cb76c942a7b2ea00851ab0d4aadb33fef30f19f5daef971219e9d64d9faeae47b84de4cdd52c4299209bb5fd89b99e6cff3bb3cbbc1b7baa065c5253e8d5fbaad7f2bca405d539f49e284cb16f33df004c294c8ed5033acfc676787481bae963ba78d349b63015369747dbd955e6694b81eab78b5c086670eff3a11d4a74df83e1ae9a9d39f8aa100398013b9b2ba5a0d325c75a0411c673bd08fda679bd3605a556c90d37c70adebcdd754395d2d80d947bc78cd42bdeb8689280bf749d038e60b89ab33829e2a8349f93a16a88a4a97bddb9e1adf4a1c83071804a3e23f37589f8f49cd6ded854313b8d822c4e9eaf5acade7be1a1dfe437fccce0a87e275f94b550194d54e8e9033e83c6f624618e6be5facb2498a66c10d34fdc8cc2fbec459f34df2c348b47db8b079f65116c70651bb001ba5184c11a16acc64b6d18ea4fb851554ba8fcf2c41c3d451c1f0bd120ec9c80e8904f4c019a805b9d3906a1959c0354f4ae498955e10a700e2a71a9bee4cbcf83114374fc6e8906289beae7769fe38607165e42e8cd2b31628e24e951ae648ad8e55a83dc9af0a627fe8df79c241821ffc314f143633a3612c8a0b3e09dc54c1051919fd0c573427edfee28b98a9907e82b6c1b767969a72a28126939c8d0345216cc841151203ea0c3c6c0e69b4f7abaf1b25697a555a70877b63a098cde7c6837ca7b835eccce495a3ec3d58c35be119889149eda9b28083909179cbc68f9c123ac5064e13872454930880c3c039689a3ddc9c3a8f23cea400673a2cd9e5d88cbf698fecd8dd3d5baa61c0793afe496e292ef70d767c1c2fa60c427d69440a5eaa9477859f6c89eb0f8a0b6dcc4c5437d6e07eadb86f23c20fed6dbea52f8fb2ef471467d5fb8ca90bbbc0a36c0f49475250ac564f4adaebefb0ff809d0feaa64ade0dda3b9c4c4627290ec376615b906fc2562b89d2e80135db655cd10911d9e8e2186d6e559f852389068328eb3f3a645d026e65ae3c7dffda19478e13b8933fc375a8d74df353eee35819e7a3635105b5aa3c40fbbb1111b6b1dfb12b3333801b418f27c749e0404349d4d310c742a92bad468e7fc5c44e7c9b2b736ac04a78d9c2506b4c9cadb9bdd9d8cb18812471f456b5d7f32acc74905d6886ec0e99b19bf0a06a3482a5c0f4b204dc9604e9f5270e770f0d0da502eb16dbf65c2e583c9c5c5179f572dca4913fcc28a022fa0ee1ce2aa9f826783d4f5c78a2298e114c12c0b3c1e2839c4d8122460e934ae74625180316825d5dcb6e15a48effedfcac6ca769b75a7ba6e3b0363734d6ff0f873b271194ab377976b518394259892fe13125d3449d9c5656365f7cbe49cadd6e5a45387e2244eef5785c5719953877569814e6cb62b5747cb244eb84143076617463be2133ff404e2eaf69bbdbb16f0db807de8a22e2f9aec95c78257b83e8bc55b2dc3ff4699a0f8b8d0b911f785e2f7849d0a0f93185598fd56d4f6b114cfacf42fb03db845718afc58436e53c246d9bf2290170ae419e91f361d14735b8241879084c2e02d026a7fceab37348f4d979c243c5d06d062b7d2a6e44381d25b25c8e5041e8794782b0b9136f49874bbfe2f875600712fd6b991a2638f09b74647ab4570d4c12b6e66668e20d7db55774d79ee7a253a1ef4446aea239bfb2975aefe7a54ff284d03caf45bb568c68028b5f30b9e57b6af74a73bdb5324303aac833dbc9e7506c2401e836e50b0b4d5a591d5cf7030ab6cfa4ada4e2f895e53418f3d09a057181fdefd15300fb1e4e6f7ae5fe01565a6d275e2250d478e0fd8f0a2a8479d2594d25325cea95a4a3a30cac31a1e50160f570e2e1130cb00cad1a953686c1cd873fa8ac4f3f504cfcf1877b40b1a64baae2fb277176da089b0f2c260a3e9856a03f92914b694bfc5068c8892fc6dc4e3cd7d1e7d9ccd890c79c560b4665fdfd185077d42db775c0a7ee613c34eb2158bae92adb44994165d036d93195c117db254e5863b5cecc0a1570335a2917eb21d21cd5328b52e60bdeee076cb9cff123430c19ca0906c7cb84f5815eaf1a20739d225e0ea66cde1d6ad49180bc5e1d996978d0f4c7aaf0625485b5754ce8eb7c6c1d7e50d997756ec5f13ed98007674d023b7ae51835c0f2f5b064306541d9ddabaf670fa76b2a71e10d2c83221f1c917e125d341b53e429c90c7cbac80389a75434996afd0727746e7c7ed52b851d673787c3da0f21f1ec384a19192bdd30b9b4c8d04c6c2c8557581763ce84611f6177b679f9231084c343134232ae7362fce023b02a988cfe50ee02fc9ada71d4fe8339a1627422005c7f72c6bf8ed464456a872997ebe43fbe095a888377f7d6c8dd4131cdd25659dac2cb7ab2e457826b83bc245428acd6f4520dea9612a3eefb9ed5654fef3b77bbd5a2df37de65f661bd6a054b2e7bc98d039c205d7d83ea0cc0d66ac49f2bb64dac9b644c6a442389edf046a58049ed6561431573b832bc3f3d695f7163d7a3c9f070ed060bfb1139c2b2c078709ad1cf859bb1c109899571d2588fcf931b5aed3ef572e243a2759c1d7f9480d56c97c569c6530fa5395e0d866c3babd6d3511bab32f519a87964ea5d02a479edc78ff7344b8fc7ad71e43d5a66e639aa352d354a07f46f7107f3a2f0e5533cbc3b6394636d38877214eb25f0574e993e21baf39daf682ec8a2ae7948e522490c544a6d327f8cd3546f2b065cb08614e104507a651c8d5958d9cec3cc5d0e679e3e3e891bc38352f08cd4de2d58df796d9dd7a945bdd497bb71e6712fa2a52ea0fbf2545a59c4e64548c0b33d7fd26cbfbd5acbdb128ad32d3d74ca74b816ebffa23869febceb873f80c8a853c3cb05b9bacde625d00e250d401843ca15e3bf6ed8ebe03810ec3481dd54303e2d6bc5d681abdc8d6ba66c2c86b4cabb93f699479ffc9c5ed7a20144e6013f240c1fdec2f1b221c023b4c1882b88baa1f81ee505f2f806c19cea89af4b5699a1f163bb19aed3da26bb96421932c90c1e1a5ca3e8cfc7179f9a1162f791a3135f09ec2a8dec04a83f700233244abed8338b72e27245b420fad03b16d42878085f6f557ea678f6cdd7348ec410ec277068638e2e7c4f0a469e3b79b8f6660c668091c7f8c0efbfa4bad02c8b17d49bde77fceb9c986a8cab5d753ee2687e49aeb1973992213bd1abb200c79596c3e3a5a9728d49096a7f0764973559318794b47146bbd90c13568b6b6426e4b475abcee6fda27606efef1048a81ef69bfb9a581b4d2ceb8738caafeb6b73420d6bf5a32f7f984683676b2daad717a28b14b81c4832cb4497c58c972368cc9f4586c086cd3b52b509609bc3b8bf7bd72590a09b4ac0d419cb93d7cddd39470df390ba852fc7e06e48de67791d4b2f4437550429cf3b34488a8cf9508191daaec24627b4c0976f9d0fabe932e43e3e828b518e08802115461212347f641405c2133c36dbfde5de1f5793b0b893775c7f2852c91f0970552c0b7a5097a990d99ac1467cec015bb3e0e3fca47ee284251135e5df21e311d69405b528c5ee56bfd9776125b3ce7f1d3e33379212c90c55b7a4d446e4d27e4fb263b1c6121ae0f14e089b458ff31a6533aa0d4ffefa7af984d5a2b724cfb6740a5cebeb9d487b1f6fcfbce637d7a4b171f051c13e2e2268b0a4c09072ee82ad98f4c1c8f98f0912229e460bc767c412b698c64905ef1ffe46e480f7223d7777dc2a341863197c41d4ceb5f08008394209027e1359086e323a992cc444f3f358439f9f32149bfff3ed3530c7ab37eb5b15ac1e7e3f8be355f3f5cc55fda7bb3ca4162483500c4a3418b46529ce7503fe7e54e4223e3061d9d5752b272c6e9d73ccec9c3518816e2ac33eaa85e2fe0bb79ca2296d3a749b7024fc16958adcecbe3ab430ce11f476f18b31aff898148732cf5a2d1df0c26d5fa419aa9c64f00f97ec2656ca2ae0849c086cc9ca7df22632fb074e00eb08b5ea2701ff5edcb7098b89cc906471a82f6a41a0016453cbaa7c62a65f6dcc7994599fbb0db13a152934de2f450314b17bd1c01d10eebdb1011e96e8e6d7ec75c85f6c2d59cbf81e67321107eee8125024e5af1c03f53f0c04f0994a73608893171063aecab6b0e90dbf203b58ced72563f708ffbb93373096f568853af21e2adb99d276b32cae3e73da2a08c3e0827571bf241768765827805e6eead128d87acde252f1e1631c39602e9d6a4b3474e701e8f727da7eb060751409dd7a3cb849bfc8ea261eb044f6e72c22ab0ba4b03692016ac740e8f417d0f13db0af12ceb350d0949416f17976a56ee0abb5652512148c05e77f6f8aee3a7935bfbc9533882b90721897d1a532407c0ee3ba917380856b84c1f1ac372e550424c695c10a2e17c90705140c94154cfc1e577189a9ffbf69c3a14600ce04ab91bc2772637a7fc3b23d71237d3c0c5a790a60cf463b6934ddcae14261a72e4e10c78702d31403f7340a3ff87e713c271b78f950616c9bf5b3a95d918bb1c2824d626389e07c1eec4622ad0006779d6cc775e5fc68211fc8afe3d85e5d8ba2594a5d34e19f8a4b47720d304f7c3616591ab3a08cf1cff8e8918a855857b932bdffa16d63b86e4255ad5dfb8f449abdfe8d7202c4dbc80efda0d723ed3af86b72dcefff182f51616767b377fd84880785c41fdbfd1d7c0076d7478b73c084e731d7f0ce6f31946cdeb3ede8c2ef233e962601f6ebc53eab977fef02bd9fe139321f9cb6d84a18b1d80b9f44e083e67ce04dea088da63a590bc3d4f977989d4dbd2aec0ad15056aa2b0208ce9373804572a1bb05e357503f5ba3857c54be4acd01b4e0fe9bf886c3db99cd13a5fbc3fc8defa39007cd4167801537001e34c4d8e325932fd99204ab6139a3dc1b2eb50aeecc842de8acf1241d84a3225f1f3896ee074df211ced120223bfce30e7d251e481dfcb598a8520ff1dbf73bc1f18a73a5d834d809ff5d8f93324b7654690d5427e200d51a5a7ed9709034b31a97b2e2db45d9ca25d3f64da152b027cb9337be474efe53e17cff71cd140dce914ef0bc3f13214e997da8a3963d5bd4bfaeb66827f0c1b4b38a1b656fe116bc5a84bc993e4acb9f85744f4f85f7fc68b80fa5ba5b7f896462e2776a99bb4726559cdc7ad3b1d38e0fd7f0af989fed53e761527e94a470a50e579c0dc100094e7ff8d483ffc0e38ce1b8d2f63c9ddf4e810390fd610d67af212494d1b952fdca687455fd6af72507a161584170348c82eca74d16ccf944a6b22098c6a41951419753d24ce0fa724940c560a3179878fe5c6f6a7ad9a65b5236da2832a8daf488fd62a156e16975392ed814d44d45558e404811f31eaa4568672c4735fa87bea7ae3f22ddca7737e19e3db4ec3efa0c3727c38db7b5edd76f2de67d6d6000df6ad734939302730161442b0ba06fc0c8361050a0fd6e135052a79ef7b673e806a43a55bf831776a03e0a9cf62eeca7b4128f243d3530c983b7f26dfc4254d2385d0987c91a6d90ad9b6996cb89c8a52179cd3637e162ee2233b0b52a82e0c7851ca7f9580495ac022b92e0c4a4c2e5bbd129c28202f16ec598425c15f9e0a2d339189c789ecafe27c766139a5a2cde433af5b3ab80e65d3fb2efffa0de217ffa90e3ac9fe698c75034876ad734a2f7cdec78e0651fe06d2501725b0cb43665f9b7a15fd1f06a2faf06bbca301001f223e9a8407bf4285b8bdc36b0152ede779aab920688bf6f0d689415d000f67d387247b1a4e6e1079afe494526811df68596aa6712a8fdd2fcbe61be41e382f456503053717750fe8cb115fa6e82f9737c69b46dab162d30a2150ab67cb2a3bf71f7beda384b2113d6619f3bf7689915b5c48c5ae9532dcf747b67081de18b1815ab6a455c67046475db1ea515fc592df716d9b0c2482af4e3101c679a7d8aadfb60333584b728b57fd070a92a921ca76815973c31e7b79624d03634409196ff08cb6f9028fbcff5dcfdbed6aecd9a589f0fcb97a88a33e07bd9de72035027da0361dbb0156efc1e1fc8455f3150912644745dc8a44e99483b2e47abb637319ac7c817d611aee2a056ab38e13cd9bd5e2898ce8d1543e2cd40eb733a55a33be67a960cc2f5dcb0cad965acc3c204e21a6f5c93e0909223acaf958e929acfdee46dd51ff9afdb4e8069b0dab488da8e0257896be9ed5d9ec5c05901686b45dc0cf573213d792376abaef1def15d87ef489f360aeb9481a93f6dd8f9d96f31439c6bfae933456a595b4af0abd0b1bc9c22f14ceb68e3a4719701f46558ff549582caae419e55e9e2b6af907c8f2aed234070646c50238abc91954b15bd9226d9cbc6eec4930bab7a30c40b60ebc10e789cde1fb2ed72f517873befd2bd0960cc2abb5222fff0e9fffa850434369def11005a23b8a5832846015780bd4a61633cc13ea570b3e218a10d0ed871c61354fbc07113e7db4df616dc00ba2462a0ad19c4720f98935176cd5d6d0911a5aaa13a6187976b31f95a6ac043d34c075e07db8308ff5d0468192c37f388fa8fc2d7f842b5f7752389bd31ebd811d67da47cfb1c8340ccdc0a6ac38aad9bde3bdf771e4c7e649ac60346b65015c0ad77c523d3558ecdfc2c78377fc03b8bb6d3b09d22799dd24e63c33b410cacd7c683bf3e1565bc54085ee030ddb2eb5d5f53a84e77fb66f13ae11f0c289db659f5f911783068e724a98b0071526780f070ba0cdc1cbdb6b46e61163560f0a27225ad2276092e837dcba55790ca2e4a5378548d24f05c72c8b2dd8912822c2a9e6909061a3f3c2e6981ac58b68f6a7ea065469091b52919a4e444ed9ec0632c616b43d8b71ad0ca3476dd915ed6761e8db9c9c61f99336b57affaa72822e78ed8ac57f56ea49d36c7f03bc50b6d383b2bb4dc939aab0bc065b4b0719a2eead891fc69629b427ade0cc89fb2dc8176a42ac56a2393840bf6fcf5ae5506df842916dcfee143a15fffdcd01dcfa786313d23d720766c1ca41d7d3153fa8f36b8699d425e338f41cc2818726612c95a9f0d36edfcc7dd4370a40cebc6085bb93c0049dab36e0deaed03e96ec11a65840b7e9f0c70ae2ae1b80f6110bd7b6b91c4dfe03dbd069006a84e86726f18e93e044fe62dae03b4e9b700f6e6cb6789980fc54f15ccd642e6ccce7fb4bb157c735fd8d0f7bd32634f9d1680008f30f69229581f5aa9639ace1e2e53254e90d351e471c0</script>
   <div class="hbe hbe-content">
     <div class="hbe hbe-input hbe-input-default">
@@ -289,456 +170,4 @@
     </div>
   </div>
 </div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
-              
-
-              
-            
-            <hr/>
-            <div>
-              <div class="post-metas my-3">
-  
-  
-    <div class="post-meta">
-      <i class="iconfont icon-tags"></i>
-      
-        <a href="/tags/LeetCode-Practice-20250720/" class="print-no-link">#LeetCode-Practice-20250720</a>
-      
-    </div>
-  
-</div>
-
-
-              
-  
-
-  <div class="license-box my-3">
-    <div class="license-title">
-      <div>力扣练习第二天</div>
-      <div>https://zhengshuyao.cn/posts/leetcode-practice-20250720/</div>
-    </div>
-    <div class="license-meta">
-      
-        <div class="license-meta-item">
-          <div>作者</div>
-          <div>Zheng Shuyao</div>
-        </div>
-      
-      
-        <div class="license-meta-item license-meta-date">
-          <div>发布于</div>
-          <div>2025年7月20日</div>
-        </div>
-      
-      
-      
-        <div class="license-meta-item">
-          <div>许可协议</div>
-          <div>
-            
-              
-              
-                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
-                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
-                    <i class="iconfont icon-by"></i>
-                  </span>
-                </a>
-              
-            
-          </div>
-        </div>
-      
-    </div>
-    <div class="license-icon iconfont"></div>
-  </div>
-
-
-
-              
-                <div class="post-prevnext my-3">
-                  <article class="post-prev col-6">
-                    
-                    
-                      <a href="/posts/leetcode-AboutAlgorithm/" title="力扣算法知识相关">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">力扣算法知识相关</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
-                  </article>
-                  <article class="post-next col-6">
-                    
-                    
-                      <a href="/posts/leetcode-BasicKnowledge/" title="力扣基础知识掌握">
-                        <span class="hidden-mobile">力扣基础知识掌握</span>
-                        <span class="visible-mobile">下一篇</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
-                    
-                  </article>
-                </div>
-              
-            </div>
-
-            
-          </article>
-        </div>
-      </div>
-    </div>
-
-    <div class="side-col d-none d-lg-block col-lg-2">
-      
-  <aside class="sidebar" style="margin-left: -1rem">
-    <div id="toc">
-  <p class="toc-header">
-    <i class="iconfont icon-list"></i>
-    <span>目录</span>
-  </p>
-  <div class="toc-body" id="toc-body"></div>
-</div>
-
-
-
-  </aside>
-
-
-    </div>
-  </div>
-</div>
-
-
-
-
-
-  
-
-
-
-  
-
-
-
-  
-
-
-
-  
-
-
-
-  
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-    
-
-    
-      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
-        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
-      </a>
-    
-
-    
-      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
-     aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
-        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body mx-3">
-        <div class="md-form mb-5">
-          <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
-        </div>
-        <div class="list-group" id="local-search-result"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-    
-
-    
-  </main>
-
-  <footer>
-    <div class="footer-inner">
-  
-    <div class="footer-content">
-       <style scoped> copyright-footer{ position: fixed; background-color: rgba(43, 166, 166, 0.5); color: #FFF; bottom: 0; left: 0; right: 0; text-align: center; height: 20px; line-height: 20px; } </style> <footer class="col-lg-12 copyright-footer">copyright &copy; 2025 <a href="" target="_blank" rel="nofollow noopener"><span>QingKe</span></a></footer> 
-    </div>
-  
-  
-  
-  
-
-      <div>
-          <span id="timeDate">正在载入天数...</span>
-          <span id="times">载入时分秒...</span>
-          <script>
-            var now = new Date();
-            function createtime(){
-              var grt= new Date("08/17/2023 00:00:00");
-              now.setTime(now.getTime()+250);
-              days = (now - grt ) / 1000 / 60 / 60 / 24;
-              dnum = Math.floor(days);
-              hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum);
-              hnum = Math.floor(hours);
-              if(String(hnum).length ==1 ){
-                hnum = "0" + hnum;
-              }
-              minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
-              mnum = Math.floor(minutes);
-              if(String(mnum).length ==1 ){
-                mnum = "0" + mnum;
-              }
-              seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
-              snum = Math.round(seconds);
-              if(String(snum).length ==1 ){
-                snum = "0" + snum;
-              }
-              document.getElementById("timeDate").innerHTML = "🚀已持续航行&nbsp"+dnum+"&nbsp天";
-              document.getElementById("times").innerHTML = hnum + "&nbsp时&nbsp" + mnum + "&nbsp分&nbsp" + snum + "&nbsp秒";
-            }
-            setInterval("createtime()",250);
-          </script>
-      </div>
-
-</div>
-
-  </footer>
-
-  <!-- Scripts -->
-  
-  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
-  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
-
-  <script>
-    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
-    NProgress.start()
-    window.addEventListener('load', function() {
-      NProgress.done();
-    })
-  </script>
-
-
-<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
-<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
-<script  src="/js/events.js" ></script>
-<script  src="/js/plugins.js" ></script>
-
-
-  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
-  <script>
-    (function (window, document) {
-      var typing = Fluid.plugins.typing;
-      var subtitle = document.getElementById('subtitle');
-      if (!subtitle || !typing) {
-        return;
-      }
-      var text = subtitle.getAttribute('data-typed-text');
-      
-        typing(text);
-      
-    })(window, document);
-  </script>
-
-
-
-
-  
-    <script  src="/js/img-lazyload.js" ></script>
-  
-
-
-
-
-  
-  <script defer>
-    if (document.getElementById('hbePass') || document.querySelector('hbe-prefix')) {
-      Fluid.utils.waitElementLoaded('hbe-prefix', function() {
-        var hbePrefix = document.querySelector('hbe-prefix');
-        hbePrefix.parentElement.classList.add('markdown-body');
-        Fluid.utils.retry(function() {
-          if (Fluid.boot && Fluid.boot.refresh) {
-            Fluid.boot.refresh();
-            return true;
-          }
-        }, 100, 10);
-      })
-    }
-  </script>
-
-
-  
-<script>
-  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
-    var toc = jQuery('#toc');
-    if (toc.length === 0 || !window.tocbot) { return; }
-    var boardCtn = jQuery('#board-ctn');
-    var boardTop = boardCtn.offset().top;
-
-    window.tocbot.init(Object.assign({
-      tocSelector     : '#toc-body',
-      contentSelector : '.markdown-body',
-      linkClass       : 'tocbot-link',
-      activeLinkClass : 'tocbot-active-link',
-      listClass       : 'tocbot-list',
-      isCollapsedClass: 'tocbot-is-collapsed',
-      collapsibleClass: 'tocbot-is-collapsible',
-      scrollSmooth    : true,
-      includeTitleTags: true,
-      headingsOffset  : -boardTop,
-    }, CONFIG.toc));
-    if (toc.find('.toc-list-item').length > 0) {
-      toc.css('visibility', 'visible');
-    }
-
-    Fluid.events.registerRefreshCallback(function() {
-      if ('tocbot' in window) {
-        tocbot.refresh();
-        var toc = jQuery('#toc');
-        if (toc.length === 0 || !tocbot) {
-          return;
-        }
-        if (toc.find('.toc-list-item').length > 0) {
-          toc.css('visibility', 'visible');
-        }
-      }
-    });
-  });
-</script>
-
-
-  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
-
-  <script>Fluid.plugins.codeWidget();</script>
-
-
-  
-<script>
-  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
-    window.anchors.options = {
-      placement: CONFIG.anchorjs.placement,
-      visible  : CONFIG.anchorjs.visible
-    };
-    if (CONFIG.anchorjs.icon) {
-      window.anchors.options.icon = CONFIG.anchorjs.icon;
-    }
-    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
-    var res = [];
-    for (var item of el) {
-      res.push('.markdown-body > ' + item.trim());
-    }
-    if (CONFIG.anchorjs.placement === 'left') {
-      window.anchors.options.class = 'anchorjs-link-left';
-    }
-    window.anchors.add(res.join(', '));
-
-    Fluid.events.registerRefreshCallback(function() {
-      if ('anchors' in window) {
-        anchors.removeAll();
-        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
-        var res = [];
-        for (var item of el) {
-          res.push('.markdown-body > ' + item.trim());
-        }
-        if (CONFIG.anchorjs.placement === 'left') {
-          anchors.options.class = 'anchorjs-link-left';
-        }
-        anchors.add(res.join(', '));
-      }
-    });
-  });
-</script>
-
-
-  
-<script>
-  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
-    Fluid.plugins.fancyBox();
-  });
-</script>
-
-
-  <script>Fluid.plugins.imageCaption();</script>
-
-  
-      <script>
-        if (!window.MathJax) {
-          window.MathJax = {
-            tex    : {
-              inlineMath: { '[+]': [['$', '$']] }
-            },
-            loader : {
-              load: ['ui/lazy']
-            },
-            options: {
-              renderActions: {
-                insertedScript: [200, () => {
-                  document.querySelectorAll('mjx-container').forEach(node => {
-                    let target = node.parentNode;
-                    if (target.nodeName.toLowerCase() === 'li') {
-                      target.parentNode.classList.add('has-jax');
-                    }
-                  });
-                }, '', false]
-              }
-            }
-          };
-        } else {
-          MathJax.startup.document.state(0);
-          MathJax.texReset();
-          MathJax.typeset();
-          MathJax.typesetPromise();
-        }
-
-        Fluid.events.registerRefreshCallback(function() {
-          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
-            MathJax.startup.document.state(0);
-            MathJax.texReset();
-            MathJax.typeset();
-            MathJax.typesetPromise();
-          }
-        });
-      </script>
-    
-
-  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
-
-  <script  src="/js/local-search.js" ></script>
-
-
-
-
-  
-<script src="/js/typing-effect.js"></script>
-
-
-
-<!-- 主题的启动项，将它保持在最底部 -->
-<!-- the boot of the theme, keep it at the bottom -->
-<script  src="/js/boot.js" ></script>
-
-
-  
-
-  <noscript>
-    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
-  </noscript>
-</body>
-</html>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css"></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://zhengshuyao.cn">Mercedes</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://zhengshuyao.cn/posts/leetcode-practice-20250720/">https://zhengshuyao.cn/posts/leetcode-practice-20250720/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://zhengshuyao.cn" target="_blank">Mercedes的第七页日记</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/LeetCode-Practice-20250720/">LeetCode-Practice-20250720</a></div><div class="post-share"><div class="social-share" data-image="/img/butterfly-icon.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related  no-desc" href="/posts/leetcode-sql/" title="力扣数据库习题积累"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">力扣数据库习题积累</div></div></div></a><a class="pagination-related  no-desc" href="/posts/leetcode-AboutAlgorithm/" title="力扣算法知识相关"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">力扣算法知识相关</div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Mercedes</div><div class="author-info-description">我是Mercedes，一个试图用咖啡因拯救拖延症的研究生。这里是我的找工作日记，也许你也能找到自己的影子。</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content toc-div-class" style="display:none"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1534-%E7%BB%9F%E8%AE%A1%E5%A5%BD%E4%B8%89%E5%85%83%E7%BB%84"><span class="toc-number">1.</span> <span class="toc-text">1534.统计好三元组</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%84%9F%E8%A7%89%E9%9C%80%E8%A6%81%E9%87%8D%E5%A4%8D%E7%BB%83%E4%B9%A0%E7%9A%84%E9%A2%98"><span class="toc-number">2.</span> <span class="toc-text">感觉需要重复练习的题</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/leetcode-NumberTheory/" title="力扣数论">力扣数论</a><time datetime="2025-07-22T13:35:52.000Z" title="发表于 2025-07-22 21:35:52">2025-07-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/leetcode-sql/" title="力扣数据库习题积累">力扣数据库习题积累</a><time datetime="2025-07-22T12:53:52.000Z" title="发表于 2025-07-22 20:53:52">2025-07-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/leetcode-AboutAlgorithm/" title="力扣算法知识相关">力扣算法知识相关</a><time datetime="2025-07-20T06:19:52.000Z" title="发表于 2025-07-20 14:19:52">2025-07-20</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/leetcode-practice-20250720/" title="力扣练习第二天">力扣练习第二天</a><time datetime="2025-07-20T06:19:52.000Z" title="发表于 2025-07-20 14:19:52">2025-07-20</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/leetcode-BasicKnowledge/" title="力扣基础知识掌握">力扣基础知识掌握</a><time datetime="2025-05-02T12:48:52.000Z" title="发表于 2025-05-02 20:48:52">2025-05-02</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;2025 By Mercedes</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.4.2</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
