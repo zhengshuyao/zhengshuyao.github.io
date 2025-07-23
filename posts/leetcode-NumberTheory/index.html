@@ -1,12 +1,24 @@
+
+
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
   
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   
-  <title>力扣数论 | 舒瑶的技术博客</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="该文章已被加密，请输入密码查看.">
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Zheng Shuyao">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="该文章已被加密，请输入密码查看.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="力扣数论">
 <meta property="og:url" content="https://zhengshuyao.cn/posts/leetcode-NumberTheory/index.html">
@@ -17,90 +29,256 @@
 <meta property="article:modified_time" content="2025-07-22T13:36:55.707Z">
 <meta property="article:author" content="Zheng Shuyao">
 <meta property="article:tag" content="LeetCode-NumberTheory">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="舒瑶的技术博客" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
+<meta name="twitter:card" content="summary_large_image">
   
   
   
-<link rel="stylesheet" href="/css/style.css">
+  <title>力扣数论 - 舒瑶的技术博客</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
 
   
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+<link rel="stylesheet" href="/css/macpanel.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"zhengshuyao.cn","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
 
   
-  
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
-
 <meta name="generator" content="Hexo 7.3.0"></head>
 
+
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">舒瑶的技术博客</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">Shuyao&#39;s Blog</a>
-        </h2>
-      
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong class="navbar-title">SHUYAO&#39;S BLOG</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/background.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="力扣数论"></span>
+          
+        </div>
+
         
-          <a class="main-nav-link" href="/">Home</a>
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2025-07-22 21:35" pubdate>
+          2025年7月22日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
         
-          <a class="main-nav-link" href="/archives">Archives</a>
+          118 字
         
-      </nav>
-      <nav id="sub-nav">
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
         
         
-          <a class="nav-icon" href="/atom.xml" title="RSS 订阅"><span class="fa fa-rss"></span></a>
         
-        <a class="nav-icon nav-search-btn" title="搜索"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://zhengshuyao.cn"></form>
+          1 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
       </div>
+
+      
     </div>
   </div>
-</header>
+</div>
 
-      <div class="outer">
-        <section id="main"><article id="post-leetcode-NumberTheory" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/posts/leetcode-NumberTheory/" class="article-date">
-  <time class="dt-published" datetime="2025-07-22T13:35:52.000Z" itemprop="datePublished">2025-07-22</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="p-name article-title" itemprop="headline name">
-      力扣数论
-    </h1>
-  
+</div>
 
-      </header>
+  </header>
+
+  <main>
     
-    <div class="e-content article-entry" itemprop="articleBody">
       
-        <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，密码错误，请再试试。" data-whm="抱歉，这个文章不能被校验，不过您还是能查看解密后的内容。">
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">力扣数论</h1>
+            
+            
+              
+              <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，密码错误，请再试试。" data-whm="抱歉，这个文章不能被校验，不过您还是能查看解密后的内容。">
   <script id="hbeData" type="hbeData" data-hmacdigest="8e8ab7f975399f85586ae5700eaebf6c9d4b8822a62afd9e02d658c48043cb4b">a60c0e92feaa64215e16222c34e7495f195239c3af2e7c3c2336252bd1c866be9e9e15c41cf3997ef609b5395e8a0246f871b9c1e46254d9055263e72742c9274dadaa8819aa789dcfaa98cc403dd67e384166964a88c8b0bc2e3a2f16d421c1c62221fdc56aa35c92dbee18ad2bce3b897ad966b83b67dce8f7ef0a96ea32236f831d2a8fbc0ef68d843352f171a24efef12642005a1a3c1104a9d20327d6156a020f8f02fcc67ec0bfe892fc1a632aebf396d48506462db90a5e5ba2a45a954fc0b6fa4fdfa3dc1346880ad6ef38b1e7d0eaad3f13eb57bdcfb698e25bf8cea1b39be592aabaafc891800d1cf120428e994521068280f5110ef689ba701ed84452f91c8e48ca56ea20b8b020e27881939788ae0e316ab20f8dfb9aa4a144985291e225e628bc06d301f07de6c477cac2fe06955b665b9e160b0f79516ca4c21b5f8ed09c0ad3e6919334c79909f710cf977d6d0cc888a4c2ddbd446a1cfca0cf541701fa36655da3fa781950fa12f9e619e8d008a95fd1f49250e4842168e16990d20fe207cbceeb2358de1a9fc3565e21e1ba5fc7084840ac4f2eff2003b78cb7fbc64f1fc8a703f554e140922955b00cfc79c5c2164356d58e8c4a89acdb56194c039bfc9f437b0535180327c5f1c61b3931d3bc76cc95c18400aec153179f8e2e9c0bbf95cc1e92c4491fb854f4152079086570a4608eb223bad91052f7c432b7f0a1e5256385cca4dd6b279e5036aad110eaa510d34aa9a5a5afb61e63d1eebee7d2101465b75c8eab2eadfa73fc77f4db25409fc708ddd2e8b99524e9a8eaa9b31d7d21f728a3970b12333e9c28599881341322cc4b31ddf3e6d1cc665d097e8f01c2f677ffcf621989b99a3d49af9aff20d9388a4298b42dfce861bff289907efba3854baad5cc4d6f963cfa97703b47d4e6e777073f78ac7b0a207fd19d0740f010a374b23bd1b8060bbdbc2d001f32a7cf25f25203a655b31760632785a2098a2cb47825d3e97dc04037fc013cc2811bf30267ff58696c345686dc8f754d33471a699f3f0d27b749be45e5368b5830a08cf8952155490bdfeeb627eac1b3c415478c7b14b4d8472d3bacd91eebe384af842b8d03e675bc884ae2b9fb992c144587263f18329df11f6b6c76a56fa82b15c2cdd6709dc82a5085fae421b3ef968ff9df576e572bcaea92da03e4889c2327682cfd70966a302834b74ebabedfb4e1dfc790e95099f343f963f8ec1bf1bdb0d51d1e751202fb6634ba1e349d4f232d85c0e8d34cb87c4748ff7543d070747e12b74f5ade057e98c71b46f5f63b46d4f9675d82ccff75976cc87f7fce60989c0e20df304dbacdf581a3954efbe94e012251a765cc5145b547b5ed5369df624b6704dc2f0411241cc0b4fdc744dc49b7d2f926733b747b166a2aca1fd421f907fdcd5ce6bba0aaf191ab512f7fd1433ba83c7f7430536b9dd745a701a78e990e29c8698ac71f98361249c98936974801cd5c6ccb360675eef9b4934e8c974a040defd7a5be6eb54b3a0c92526285a7e9e95b460cec4bc31eeef7360fa7c45c157b1e070cff1f4b88eba9e1e30dfe805aba239eccc919398f15d400c59add4a377d53c1899c158de8183ff226c9c2a1fb727a0312dde46fe33bd3c1a2157018bd69c087a08dd993555b6b2d722c95451a46af47d0ab761cff8f6386ce98474fcf1b82993d18528f91d2c2c1456add2beb1ab0c832785a4b87ff403f3f54a227d9603112af69027415307da408f4a7bd3829236893ae64db274a11274b8201ae035d8c909e63f6a8ee5c854a6158122fd22afe4eea5449fdb45f678564891278a2f0f0d1fa9957f7826183bda51e2baac3aae41b3949920b1e4423ea8e28f82f30aae1fed9c947f5dc88161e00a4dd05879778e77d6f63fc4bb4e32286c47ae5141546358542887e56328ab891c6e13f2934d6e727f904a8df311ed81084f7d0aa3531dd7e630a5ff0a955f7487341487fd661c662568ec3970d0c830d1e24a136387f5ef0cfb7986fca14326f62a460add55c2ac5d6016ceee461262c6d393ec981df8552173e1a99c789e0e65f9b2bd39a2e195706a86e322168afb79ebf070ba1ce05de770fb08f2098181c6ae2b15e9f67dd8775df9d2946fe4e001b0186b891779cdf0d246f9934c208258295dcc735c0633e927198ef037204d0a3a1b52bd73c4789ef484695cfd90b00d6d1cb28df1b4bdc31bc74f425da64e8de80392c044dbd55b151107f2181f274684280da1f9a94fba06833fcc9957e78acb7499b1a6bc8b7d37f19e01dbec315bd8ebe2a3032228a5ad94b82064a13db660def724a004a698cd829deb0d31b746b4e303ce204ed348e71a96e88c74508b92112f061fc7f6b70db61b7c7bc2f5062e82a68e50841a8b5a0429c34020fc476181d051cda0caec3b00db3a25e77c3decac53e066146758a96a7cbe2b2337f83e7cb8936c8c0659e9658421220535afdedb74373372c87464f4b537fe96b</script>
   <div class="hbe hbe-content">
     <div class="hbe hbe-input hbe-input-default">
@@ -112,141 +290,449 @@
   </div>
 </div>
 <script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
+              
+
+              
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/LeetCode-NumberTheory/" class="print-no-link">#LeetCode-NumberTheory</a>
       
     </div>
-    <footer class="article-footer">
-      <a data-url="https://zhengshuyao.cn/posts/leetcode-NumberTheory/" data-id="cmdem7inq0002m8v75vtl87bn" data-title="力扣数论" class="article-share-link"><span class="fa fa-share">分享</span></a>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>力扣数论</div>
+      <div>https://zhengshuyao.cn/posts/leetcode-NumberTheory/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>Zheng Shuyao</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2025年7月22日</div>
+        </div>
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LeetCode-NumberTheory/" rel="tag">LeetCode-NumberTheory</a></li></ul>
-
-    </footer>
-  </div>
-  
-    
-<nav id="article-nav">
-  
-  
-    <a href="/posts/leetcode-sql/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">后一篇</strong>
-      <div class="article-nav-title">力扣数据库习题积累</div>
-    </a>
-  
-</nav>
-
-  
-</article>
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">标签</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/LeetCode-BasicKnowledge/" rel="tag">LeetCode-BasicKnowledge</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LeetCode-NumberTheory/" rel="tag">LeetCode-NumberTheory</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LeetCode-Practice-20250720/" rel="tag">LeetCode-Practice-20250720</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LeetCode-sql/" rel="tag">LeetCode-sql</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/leetcode-AboutAlgorithm/" rel="tag">leetcode-AboutAlgorithm</a></li></ul>
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
     </div>
+    <div class="license-icon iconfont"></div>
   </div>
 
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">标签云</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/LeetCode-BasicKnowledge/" style="font-size: 10px;">LeetCode-BasicKnowledge</a> <a href="/tags/LeetCode-NumberTheory/" style="font-size: 10px;">LeetCode-NumberTheory</a> <a href="/tags/LeetCode-Practice-20250720/" style="font-size: 10px;">LeetCode-Practice-20250720</a> <a href="/tags/LeetCode-sql/" style="font-size: 10px;">LeetCode-sql</a> <a href="/tags/leetcode-AboutAlgorithm/" style="font-size: 10px;">leetcode-AboutAlgorithm</a>
-    </div>
-  </div>
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/07/">七月 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/05/">五月 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/04/">四月 2025</a></li></ul>
-    </div>
-  </div>
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/posts/leetcode-sql/" title="力扣数据库习题积累">
+                        <span class="hidden-mobile">力扣数据库习题积累</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
 
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/posts/leetcode-NumberTheory/">力扣数论</a>
-          </li>
-        
-          <li>
-            <a href="/posts/leetcode-sql/">力扣数据库习题积累</a>
-          </li>
-        
-          <li>
-            <a href="/posts/leetcode-AboutAlgorithm/">力扣算法知识相关</a>
-          </li>
-        
-          <li>
-            <a href="/posts/leetcode-practice-20250720/">力扣练习第二天</a>
-          </li>
-        
-          <li>
-            <a href="/posts/leetcode-BasicKnowledge/">力扣基础知识掌握</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
+            
+          </article>
+        </div>
       </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2025 Zheng Shuyao<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
     </div>
-  </div>
-</footer>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
 
     </div>
-    <nav id="mobile-nav">
+  </div>
+</div>
+
+
+
+
+
   
-    <a href="/" class="mobile-nav-link">Home</a>
+
+
+
   
-    <a href="/archives" class="mobile-nav-link">Archives</a>
+
+
+
   
-</nav>
+
+
+
+  
+
+
+
+  
+
+
+  
+  
+
+
+
+
+
+
+
+
+
     
 
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
 
-<script src="/js/jquery-3.6.4.min.js"></script>
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <style scoped> copyright-footer{ position: fixed; background-color: rgba(43, 166, 166, 0.5); color: #FFF; bottom: 0; left: 0; right: 0; text-align: center; height: 20px; line-height: 20px; } </style> <footer class="col-lg-12 copyright-footer">copyright &copy; 2025 <a href="" target="_blank" rel="nofollow noopener"><span>QingKe</span></a></footer> 
+    </div>
+  
+  
+  
+  
+
+      <div>
+          <span id="timeDate">正在载入天数...</span>
+          <span id="times">载入时分秒...</span>
+          <script>
+            var now = new Date();
+            function createtime(){
+              var grt= new Date("08/17/2023 00:00:00");
+              now.setTime(now.getTime()+250);
+              days = (now - grt ) / 1000 / 60 / 60 / 24;
+              dnum = Math.floor(days);
+              hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum);
+              hnum = Math.floor(hours);
+              if(String(hnum).length ==1 ){
+                hnum = "0" + hnum;
+              }
+              minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+              mnum = Math.floor(minutes);
+              if(String(mnum).length ==1 ){
+                mnum = "0" + mnum;
+              }
+              seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+              snum = Math.round(seconds);
+              if(String(snum).length ==1 ){
+                snum = "0" + snum;
+              }
+              document.getElementById("timeDate").innerHTML = "🚀已持续航行&nbsp"+dnum+"&nbsp天";
+              document.getElementById("times").innerHTML = hnum + "&nbsp时&nbsp" + mnum + "&nbsp分&nbsp" + snum + "&nbsp秒";
+            }
+            setInterval("createtime()",250);
+          </script>
+      </div>
+
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
 
 
 
   
-<script src="/fancybox/jquery.fancybox.min.js"></script>
+    <script  src="/js/img-lazyload.js" ></script>
+  
 
 
 
 
-<script src="/js/script.js"></script>
+  
+  <script defer>
+    if (document.getElementById('hbePass') || document.querySelector('hbe-prefix')) {
+      Fluid.utils.waitElementLoaded('hbe-prefix', function() {
+        var hbePrefix = document.querySelector('hbe-prefix');
+        hbePrefix.parentElement.classList.add('markdown-body');
+        Fluid.utils.retry(function() {
+          if (Fluid.boot && Fluid.boot.refresh) {
+            Fluid.boot.refresh();
+            return true;
+          }
+        }, 100, 10);
+      })
+    }
+  </script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  
+      <script>
+        if (!window.MathJax) {
+          window.MathJax = {
+            tex    : {
+              inlineMath: { '[+]': [['$', '$']] }
+            },
+            loader : {
+              load: ['ui/lazy']
+            },
+            options: {
+              renderActions: {
+                insertedScript: [200, () => {
+                  document.querySelectorAll('mjx-container').forEach(node => {
+                    let target = node.parentNode;
+                    if (target.nodeName.toLowerCase() === 'li') {
+                      target.parentNode.classList.add('has-jax');
+                    }
+                  });
+                }, '', false]
+              }
+            }
+          };
+        } else {
+          MathJax.startup.document.state(0);
+          MathJax.texReset();
+          MathJax.typeset();
+          MathJax.typesetPromise();
+        }
+
+        Fluid.events.registerRefreshCallback(function() {
+          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
+            MathJax.startup.document.state(0);
+            MathJax.texReset();
+            MathJax.typeset();
+            MathJax.typesetPromise();
+          }
+        });
+      </script>
+    
+
+  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
+
+  <script  src="/js/local-search.js" ></script>
 
 
 
 
+  
+<script src="/js/typing-effect.js"></script>
 
-  </div>
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
 </body>
 </html>
